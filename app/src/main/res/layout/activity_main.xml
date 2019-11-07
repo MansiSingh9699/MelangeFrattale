@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mansi.melangefrattale.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <SearchView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:queryHint="Search here...">
+                    </SearchView>
+
+                    <ImageView
+                        android:id="@+id/filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:src="@drawable/filter" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"/>
+                <ImageView
+                    android:id="@+id/post"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/tab">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/like"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="7dp"
+                            android:src="@drawable/star"
+                            android:onClick="onClick"/>
+                        <ImageView
+                            android:id="@+id/comment"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="7dp"
+                            android:src="@drawable/comment"/>
+                        <ImageView
+                            android:id="@+id/share"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="7dp"
+                            android:src="@drawable/share"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="150dp">
+                        <ImageView
+                            android:id="@+id/upvote"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="7dp"
+                            android:src="@drawable/upvote"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-black"/>
+                <ImageView
+                    android:id="@+id/post1"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/imgs">
+                </ImageView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/tab1">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/like1"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="7dp"
+                            android:src="@drawable/star"
+                            android:onClick="onClick"/>
+                        <ImageView
+                            android:id="@+id/comment1"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="7dp"
+                            android:src="@drawable/comment"/>
+                        <ImageView
+                            android:id="@+id/share1"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="7dp"
+                            android:src="@drawable/share"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="150dp">
+                        <ImageView
+                            android:id="@+id/upvote1"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="7dp"
+                            android:src="@drawable/upvote"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
